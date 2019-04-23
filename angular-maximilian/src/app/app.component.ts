@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-maximilian';
+  loadedFeature = 'recipe';
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
